@@ -11,16 +11,16 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class T1_alert_ptactices {
+public class T1_alert_practices {
 
     WebDriver driver;
 
 
     @BeforeMethod
-    private  void setUpMethod(){
+    private void setUpMethod() {
 
 
- //1. Open Chrome browser
+        //1. Open Chrome browser
         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -31,7 +31,7 @@ public class T1_alert_ptactices {
     }
 
     @Test
-    public void alert_T1(){
+    public void alert_T1() {
 
 //3.Click to "Click JS Alert" button
 
@@ -50,12 +50,40 @@ public class T1_alert_ptactices {
 
         WebElement resultText = driver.findElement(By.xpath("//p[@id='result']"));
 
-        Assert.assertTrue(resultText.isDisplayed(),"Result text is not displayed");
+        Assert.assertTrue(resultText.isDisplayed(), "Result text is not displayed");
 
         String expectedText = "You successfully clicked an alert";
         String actualText = resultText.getText();
 
-        Assert.assertEquals(actualText,expectedText,"Actual result text is not expected!!");
+        Assert.assertEquals(actualText, expectedText, "Actual result text is not expected!!");
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

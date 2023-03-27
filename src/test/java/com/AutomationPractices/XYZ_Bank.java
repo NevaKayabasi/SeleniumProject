@@ -1,4 +1,4 @@
-package com.cydeo.AutomationPractices;
+package com.AutomationPractices;
 
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.WebDriverFactory;

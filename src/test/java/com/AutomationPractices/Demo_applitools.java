@@ -1,4 +1,4 @@
-package com.cydeo.AutomationPractices;
+package com.AutomationPractices;
 
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.CRM_Utilities;
@@ -37,6 +37,7 @@ public class Demo_applitools {
 
 
    BrowserUtils.verifyTitle(driver,"ACME demo app");
+
 
 }
  }
